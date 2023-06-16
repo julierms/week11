@@ -1,0 +1,131 @@
+body {
+  background-color: #5a255d;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #a1c3d1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  border: 2px solid #a1c3d1;
+  background-color: #0e0e16;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #1b2430;
+}
+
+.cell:active {
+  background-color: #92a2ff;
+  color: #fff;
+}
+
+.cell.x {
+  color: #ff00f2;
+}
+
+.cell.o {
+  color: #8400ff;
+}
+
+#message {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.button-container button {
+  display: inline-block;
+  margin: 0 10px; /
+}
+button {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #a1c3d1;
+  color: #0e0e16;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0e0e16;
+  color: #a1c3d1;
+}
+
+/*table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    }
+    
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    }
+
+    #winningMessage {
+        height: 200px;
+        position: relative;
+       
+        text-align: center;
+      }
+      
+      .vertical-center {
+        margin: 0;
+        position: absolute fixed;
+        top: 50%;
+        display: flex grid;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+.x {
+  color: greenyellow;
+  font-size: 80px;
+        }
+        
+.o {
+  color: hotpink;
+  font-size: 80px;
+        }
+    
+    */
